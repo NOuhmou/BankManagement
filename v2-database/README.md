@@ -139,11 +139,4 @@ Email : ahmed@mail.com
 
 ---
 
-## 👩‍💻 Auteur
-
-**Najat Oudaoud ouhmou**  
-🎓 Étudiante ingénieure en Sciences des Données, Big Data & IA  
-🏫 ENSIASD - Taroudant
-
-[![GitHub](https://img.shields.io/badge/GitHub-NOuhmou-black)](https://github.com/NOuhmou)
 
