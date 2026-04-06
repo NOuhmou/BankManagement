@@ -1,5 +1,3 @@
-
-```markdown
 # 🏦 Bank Management System
 
 [![Java](https://img.shields.io/badge/Java-21%2B-orange)](https://www.java.com/)
@@ -32,38 +30,6 @@ Il est présenté en **deux versions** pour démontrer ma progression :
 | **Architecture DAO** | ❌ | ✅ |
 | **Transactions sécurisées** | ❌ | ✅ |
 
----
-
-## 📁 Structure du projet
-
-```
-BankManagementSystem/
-├── v1-memory/              # Version mémoire (sans BD)
-│   ├── src/
-│   │   └── bank/
-│   │       ├── Account.java
-│   │       ├── Bank.java
-│   │       ├── BankEntity.java
-│   │       ├── Client.java
-│   │       ├── Employee.java
-│   │       ├── Main.java
-│   │       ├── Person.java
-│   │       └── exceptions/
-│   └── README.md
-│
-├── v2-database/            # Version avec MySQL
-│   ├── src/
-│   │   └── bank/
-│   │       ├── model/           # Entités (Client, Account)
-│   │       ├── dao/             # Data Access Object
-│   │       ├── db/              # Connexion MySQL
-│   │       ├── exceptions/      # Exceptions personnalisées
-│   │       └── Main.java
-│   ├── creation.sql             # Script SQL
-│   └── README.md
-│
-└── README.md               # Ce fichier
-```
 
 ---
 
@@ -104,66 +70,25 @@ BankManagementSystem/
 
 ---
 
-## 🗄️ Base de données (Version 2)
+## 💻 Exemple d'exécution
 
-### Schéma MySQL
+```bash
+===== MENU PRINCIPAL =====
+1. Gérer les clients
+2. Gérer les comptes
+3. Transférer de l'argent
+4. Afficher tous les comptes
+0. Quitter
 
-```sql
--- Table des clients
-CREATE TABLE clients (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(50) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE
-);
+Votre choix : 1
 
--- Table des comptes
-CREATE TABLE comptes (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    rib VARCHAR(20) NOT NULL UNIQUE,
-    pin VARCHAR(4) NOT NULL,
-    solde DECIMAL(10,2) DEFAULT 0.00,
-    client_id INT NOT NULL,
-    FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
-);
+--- GESTION DES CLIENTS ---
+1. Ajouter un client
+2. Lister tous les clients
 
--- Table des transactions (préparée pour extension future)
-CREATE TABLE transactions (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    type VARCHAR(20) NOT NULL,
-    montant DECIMAL(10,2) NOT NULL,
-    compte_id INT NOT NULL,
-    FOREIGN KEY (compte_id) REFERENCES comptes(id)
-);
-```
-
-### Modèle Conceptuel de Données (MCD)
-
-```
-┌─────────────┐         ┌─────────────┐
-│   clients   │         │   comptes   │
-├─────────────┤         ├─────────────┤
-│ id (PK)     │◄────────│ client_id   │
-│ nom         │         │ id (PK)     │
-│ email       │         │ rib         │
-└─────────────┘         │ pin         │
-                        │ solde       │
-                        └─────────────┘
-                              │
-                              ▼
-                        ┌─────────────┐
-                        │transactions │
-                        ├─────────────┤
-                        │ id (PK)     │
-                        │ date        │
-                        │ type        │
-                        │ montant     │
-                        │ compte_id   │
-                        └─────────────┘
-```
-
----
-
+Nom : Ahmed
+Email : ahmed@mail.com
+✅ Client ajouté avec succès !
 ## 💻 Exemple d'exécution
 
 ```bash
