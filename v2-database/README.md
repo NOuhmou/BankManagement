@@ -1,5 +1,3 @@
-
-```markdown
 # 🏦 Bank Management System - Version 2.0
 
 [![Java](https://img.shields.io/badge/Java-21%2B-orange)](https://www.java.com/)
@@ -54,10 +52,6 @@ CREATE TABLE comptes (
     client_id INT NOT NULL,
     FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
 );
-```
-
----
-
 ## 🛠️ Technologies utilisées
 
 | Technologie | Rôle |
