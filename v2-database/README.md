@@ -141,7 +141,7 @@ Email : ahmed@mail.com
 
 ## 👩‍💻 Auteur
 
-**Najat Ouda**  
+**Najat Oudaoud ouhmou**  
 🎓 Étudiante ingénieure en Sciences des Données, Big Data & IA  
 🏫 ENSIASD - Taroudant
 
