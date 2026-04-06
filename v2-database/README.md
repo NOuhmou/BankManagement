@@ -1,6 +1,3 @@
-## ✅ **Voici le README.md simplifié pour v2-database (sans structure)**
-
-Copie-colle ce contenu dans `C:\Users\hp\github-projects\BankManagementSystem\v2-database\README.md` :
 
 ```markdown
 # 🏦 Bank Management System - Version 2.0
