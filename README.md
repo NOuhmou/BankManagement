@@ -1,6 +1,6 @@
 # 🏦 Bank Management System
 
-## 📚 Deux versions du même projet pour montrer ma progression en Java
+
 
 Ce projet est un système bancaire complet qui a évolué au fil de mon apprentissage.
 
