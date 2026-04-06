@@ -1,69 +1,91 @@
 # 🏦 Bank Management System
 
+[![Java](https://img.shields.io/badge/Java-21%2B-orange)](https://www.java.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)](https://www.mysql.com/)
+[![JDBC](https://img.shields.io/badge/JDBC-MySQL-green)](https://dev.mysql.com/doc/connector-j/en/)
 
+## 📋 Description
 
-Ce projet est un système bancaire complet qui a évolué au fil de mon apprentissage.
+**Bank Management System** est une application console Java qui simule un système bancaire complet.  
+Ce projet est présenté en **deux versions** pour démontrer ma progression :
 
----
-
-## 📁 Version 1 : Mémoire (Sans base de données)
-
-[➡️ Voir la version 1](./v1-memory/)
-
-**Caractéristiques :**
-- Stockage des données en mémoire (ArrayList)
-- Interface console interactive
-- POO : héritage, interfaces, exceptions
-- Génération automatique de RIB et PIN
-
-**Concepts appris :**
-- Classes et objets
-- Constructeurs et encapsulation
-- Héritage (Client/Employee)
-- Interfaces (BankEntity)
-- Gestion des exceptions
+- **Version 1** : Gestion des données en mémoire (ArrayList)
+- **Version 2** : Persistance des données avec MySQL et architecture DAO
 
 ---
 
-## 📁 Version 2 : Base de données (Avec MySQL)
+## 🚀 Fonctionnalités
 
-[➡️ Voir la version 2](./v2-database/)
+| Fonctionnalité | v1 (Mémoire) | v2 (MySQL) |
+|----------------|:------------:|:----------:|
+| Création de comptes | ✅ | ✅ |
+| Dépôt / Retrait d'argent | ✅ | ✅ |
+| Transfert entre comptes | ✅ | ✅ |
+| Authentification (RIB + PIN) | ✅ | ✅ |
+| Génération automatique RIB/PIN | ✅ | ✅ |
+| Interface console | ✅ | ✅ |
+| **Persistance des données** | ❌ | ✅ |
+| **Architecture DAO** | ❌ | ✅ |
+| **Transactions sécurisées** | ❌ | ✅ |
 
-**Caractéristiques :**
-- Persistance des données avec MySQL
-- Architecture DAO (Data Access Object)
-- JDBC pour la connexion Java/MySQL
-- Transactions bancaires complètes
-
-**Concepts appris en plus :**
-- JDBC et connexion à une base de données
-- Pattern DAO (Data Access Object)
-- SQL (SELECT, INSERT, UPDATE, DELETE)
-- Gestion des transactions
+---
 
 ---
 
 ## 🛠️ Technologies utilisées
 
-| Version | Technologies |
-|---------|--------------|
-| **v1** | Java 21, POO |
-| **v2** | Java 21, MySQL, JDBC, XAMPP |
+| Technologie | Version | Utilisation |
+|-------------|---------|-------------|
+| **Java** | 21 | Langage principal |
+| **MySQL** | 8.0 | Base de données (v2) |
+| **JDBC** | - | Connexion Java/MySQL |
+| **XAMPP** | - | Serveur local MySQL |
+| **Git & GitHub** | - | Versionnement |
 
 ---
 
-## 📊 Ce que cette progression démontre
+## 📊 Concepts démontrés
 
-1. ✅ Compréhension des bases de Java
-2. ✅ Maîtrise de la Programmation Orientée Objet
-3. ✅ Capacité à ajouter une base de données
-4. ✅ Adoption d'architectures professionnelles (DAO)
-5. ✅ Persévérance et apprentissage continu
+### Programmation Orientée Objet (POO)
+- ✅ Héritage (`Client extends Person`, `Employee extends Person`)
+- ✅ Polymorphisme (interface `BankEntity`)
+- ✅ Encapsulation (getters/setters)
+- ✅ Classes abstraites (`Person`)
+
+### Architecture et Design Patterns
+- ✅ Pattern DAO (Data Access Object)
+- ✅ Séparation des responsabilités (model, dao, db)
+- ✅ Gestion centralisée des connexions
+
+### Gestion des données
+- ✅ Collections (ArrayList) - v1
+- ✅ JDBC et requêtes préparées (PreparedStatement) - v2
+- ✅ Transactions SQL - v2
+
+### Gestion des erreurs
+- ✅ Exceptions personnalisées
+- ✅ Try-catch et try-with-resources
+- ✅ Validation des entrées utilisateur
 
 ---
 
-## 👩‍💻 Auteur
+## 💻 Exemple d'exécution
 
-**Najat Ouda** - Étudiante en Sciences des Données à l'ENSIASD
+```bash
+===== MENU PRINCIPAL =====
+1. Gérer les clients
+2. Gérer les comptes
+3. Transférer de l'argent
+4. Afficher tous les comptes
+0. Quitter
 
-📅 **Projet réalisé en Mars 2026**
+Votre choix : 1
+
+--- GESTION DES CLIENTS ---
+1. Ajouter un client
+2. Lister tous les clients
+
+Nom : Ahmed
+Email : ahmed@mail.com
+✅ Client ajouté avec succès !
+
