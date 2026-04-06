@@ -10,16 +10,6 @@ Première version du système bancaire. Les données sont stockées en mémoire 
 - ✅ Authentification (RIB + PIN)
 - ✅ Interface console
 
-## Structure du projet
-v1-memory/
-└── src/
-├── Account.java
-├── Bank.java
-├── BankEntity.java
-├── Client.java
-├── Employee.java
-├── Main.java
-└── Person.java
 
 
 ## Concepts Java utilisés
