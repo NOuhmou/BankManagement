@@ -96,6 +96,3 @@ Email : ahmed@mail.com
 🎓 Étudiante ingénieure en Sciences des Données, Big Data & IA  
 🏫 ENSIASD - Taroudant
 
-[![GitHub](https://img.shields.io/badge/GitHub-NOuhmou-black)](https://github.com/NOuhmou)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Najat_Ouda-blue)](https://linkedin.com/in/najat-oudaoud-ouhmou-b1936b259)
-
